@@ -15,9 +15,6 @@ class Desdobra:
     def numero_primo(self):
         pass
 
-    def quadrante(self):
-        pass
-
     def fibonacci(self):
         pass
         
