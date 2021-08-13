@@ -14,8 +14,8 @@ class Construtor:
 
     
 
-def quadrante():
-    x=[
+
+x=[
         [
             [1,2,3,4,5],
             [11,12,13,14,15],
@@ -38,9 +38,11 @@ def quadrante():
         ]
     ]
 
-    a = x[0]
-    b = x[1]
-    c = x[2]
-    d = x[3]
-    
-    
+for a in range(len(x)):
+    # print('a:',a)
+    for b in range(len(x[a])):
+        # print('b:',b)
+        for c in range(len(x[a][b])):
+            print(x[a][b][c])
+
+
