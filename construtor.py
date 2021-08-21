@@ -54,6 +54,10 @@ class Construtor:
 
         return sorted(aposta)
     
+
+    def dezena():
+        pass
+
     print(aposta(id_aposta,x))
 
 

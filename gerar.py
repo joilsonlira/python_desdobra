@@ -20,25 +20,29 @@ class Gerador:
         for n in range(configuracoes_loteria[1]):
 
             quadrante = rand.randint(0,3)
-            conjunto = rand.randint(0,4)
             dezena = rand.randint(0,4)
 
             if configuracoes_loteria[0] == 1:
-                if quadrante >= 2:
+                if quadrante > 1:
                     conjunto = 0
+                else:
+                    conjunto = rand.randint(0,4)
+
 
             id_dezena = [quadrante,conjunto,dezena]
 
             if id_aposta.count(id_dezena):
+
                 id_dezena = []
                 del id_dezena[:]
 
                 quadrante = rand.randint(0,3)
-                conjunto = rand.randint(0,4)
                 dezena = rand.randint(0,4)
                 id_dezena = [quadrante,conjunto,dezena]
                 id_aposta.append(id_dezena)
+
             else:
+                
                 id_aposta.append(id_dezena)
     
         return id_aposta
